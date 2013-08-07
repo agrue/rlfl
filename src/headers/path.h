@@ -47,7 +47,6 @@ typedef struct {
 
 	unsigned int cx, cy;
 } path_int_t;
-path_int_t* PATH;
 
 #define STATE_EMPTY		0
 #define STATE_OPEN		1

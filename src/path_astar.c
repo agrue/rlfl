@@ -49,6 +49,8 @@ Then if
 static int dirx[]	={ 0,-1, 1, 0,-1, 1,-1, 1};
 static int diry[]	={-1, 0, 0, 1,-1,-1, 1, 1};
 
+path_int_t* PATH;
+
 /* Private functions */
 static err init_path(unsigned int m, float dcost);
 static err find_path(unsigned int m, unsigned int ox, unsigned int oy, unsigned int dx, unsigned int dy);
