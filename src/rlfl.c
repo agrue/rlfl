@@ -251,7 +251,7 @@ RLFL_has_flag(unsigned int m, unsigned int x, unsigned int y, unsigned long flag
 	if(!flag_valid(flag))
 		return RLFL_ERR_FLAG;
 
-	if(CELL(m, x, y) & flag)
+	if((CELL(m, x, y) & flag) == flag)
 		return true;
 
 	return false;
