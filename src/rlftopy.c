@@ -399,7 +399,7 @@ los(PyObject *self, PyObject* args) {
 static PyObject*
 fov(PyObject *self, PyObject* args) {
 	unsigned int m, x, y, r, a;
-	bool lit = true, lw = true;
+	unsigned int lit = true, lw = true;
 	if(!PyArg_ParseTuple(args, "i(ii)i|iii", &m, &x, &y, &r, &a, &lit, &lw)) {
 		return NULL;
 	}
@@ -586,7 +586,7 @@ static PyObject*
 scatter(PyObject *self, PyObject* args) {
 	unsigned int m, ox, oy;
 	int r = -1;
-	bool los = true;
+	unsigned int los = true;
 	unsigned long flag = 0;
 	if(!PyArg_ParseTuple(args, "i(ii)|ili", &m, &ox, &oy, &r, &flag, &los)) {
 		return NULL;
